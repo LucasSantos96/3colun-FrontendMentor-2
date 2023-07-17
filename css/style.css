@@ -44,11 +44,13 @@ body{
     text-transform: uppercase;
     color: hsla(0, 0%, 100%, 0.75);
     font-size: 30px;
+    padding-top: 20px;
 }
 .cx p{
     font-family: 'Lexend Deca', sans-serif;
     line-height: 1.6;
     color:hsla(0, 0%, 100%, 0.75);
+    padding-top: 30px;
 }
 .cx a{
     text-decoration: none;
