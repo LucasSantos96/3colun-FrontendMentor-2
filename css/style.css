@@ -3,90 +3,83 @@
     padding: 0;
     box-sizing: border-box;
 }
-
-body {
+body{
     background-color: hsl(0, 0%, 95%);
     min-height: 100vh;
     display: flex;
     align-items: center;
-    justify-content: center;
-    flex-wrap: nowrap;
-    color: #fff;
-
-   
-}
-
-.sedans {
-    border-radius: 5px 0px 0px 5px;
-    width: 270px;
-    height: 430px;
-    background-color: hsl(31, 77%, 52%);
-    /* padding-top: 60px;
-    padding-bottom: 40px;
-    padding-left:40px ; */
-    padding: 45px 0px 40px 40px;
-}
-
- .suvs {
-    width: 300px;
-    height: 430px;
-    background-color: hsl(184, 100%, 22%);
-    /* padding-top: 60px;
-    padding-bottom: 40px; */
-    padding: 45px 0px 40px 40px;
-
-}
-
-.luxury {
-    width: 300px;
-    height: 430px;
-    background-color: hsl(179, 100%, 13%);
-    border-radius: 0px 5px 5px 0px;
-    /* padding-top: 60px;
-    padding-bottom: 40px; */
-    padding: 45px 0px 40px 40px;
-
-
-
-}
-img{
-padding-bottom: 20px;
-width: 60px;
-  
-}
-h1{
-   
-  font-family: 'Big Shoulders Display', cursive;
-  font-size: 35px;
-  text-transform: uppercase;
-  padding-bottom: 20px
-}
-p{  
+    font-size: 15px;
     font-family: 'Lexend Deca', sans-serif;
-    font-size: 13px;
-    width: 80%;
-    color: hsla(0, 0%, 100%, 0.75);
-    font-weight: 400px;
-    padding-bottom: 40px;
-    line-height: 1.5rem;
-   
+    font-weight: 400;
 }
-button {
-    background-color:hsl(0, 0%, 95%) ;
-    border: none;
-    border-radius: 430px;
-    padding: 15px;
-    width: 50%;
-    font-family: 'Lexend Deca', sans-serif ;
-    
-} 
-.sedans button{
+.container{
+    max-width: 960px;
+    margin: 0 auto;
+
+
+}
+.wrapper{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    border-radius: 8px;
+    margin: 2rem;
+    overflow: hidden;
+
+}
+.cx-1{
+    background-color: hsl(31, 77%, 52%);
+
+}
+.cx-2{
+    background-color: hsl(184, 100%, 22%);
+}
+.cx-3{
+    background-color: hsl(179, 100%, 13%);
+}
+.cx{
+    padding: 40px;
+}
+.cx h1{
+    font-family: 'Big Shoulders Display', cursive;
+    text-transform: uppercase;
+    color: hsla(0, 0%, 100%, 0.75);
+    font-size: 30px;
+}
+.cx p{
+    font-family: 'Lexend Deca', sans-serif;
+    line-height: 1.6;
+    color:hsla(0, 0%, 100%, 0.75);
+}
+.cx a{
+    text-decoration: none;
+    background-color: hsl(0, 0%, 95%);
+    padding: 13px 27px;
+    border-radius: 25px;
+    margin-top:60px ;
+    display: inline-block;
+    border: 2px solid hsl(0, 0%, 95%);
+    transition: all .3s ease-in-out;
+}
+.cx-1 a{
     color:hsl(31, 77%, 52%) ;
 }
-.suvs button{
-    color:hsl(184, 100%, 22%) ;
+.cx-2 a{
+color: hsl(184, 100%, 22%);
 }
-.luxury button{
-    color:hsl(179, 100%, 13%) ;
-    margin-top: 30px;
+.cx-3 a{
+color:hsl(179, 100%, 13%) ;
 }
+.cx a:hover{
+color: hsl(0, 0%, 95%) ;  
+background-color: transparent;
+}
+@media only screen and (max-width:768px){
+    .wrapper{
+        grid-template-columns: 1fr;
+    }
+} 
+@media only screen and (max-width:425px){
+    .wrapper{
+        margin: 2rem .5rem;
+    }
+} 
